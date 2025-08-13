@@ -8,148 +8,211 @@ export const EXPERIENCES: Experience[] = [
         title: "Frontend Engineer",
         year: "09.2023 - present",
         description: `
-- ♦ Lemme build something cool first... then I'll tell you what I did 😉.
+- ♦ Currently building an ERP & ITSM product
             `,
         skills: [
           "TypeScript",
           "React",
-          "Zustand",
-          "Tailwind CSS",
-          "Node.js",
-          "Fastify",
-          "BullMQ",
-          "Redis",
-          "PostgreSQL",
+          "Redux",
+          "Chakra UI",
           "Docker",
-          "Playwright",
+          "Azure",
           "Vite",
-          "Nx",
+          "D3.js",
+          "Apex Charts",
+          "Figma",
+          "Design Systems",
+          "CI/CD",
+          "REST APIs",
+          "WebSockets",
+          "Azure DevOps",
+          "Performance Optimization",
+
         ]
       },
     ],
   },
   {
-    company: "BIGmama Technology",
+    company: "Merkle DACH",
     positions: [
       {
-        title: "Fullstack Engineer",
-        year: "04.2024 - 04.2025",
+        title: "Frontend Engineer",
+        year: "12.2021 - 08.2023",
         description: `
-- ♦ Developed **end-to-end features** across the stack using **Next.js,  Zustand, React Query, FastAPI and Mongodb**.
+- ♦ Worked with several clients using React and Typescript with AEM, Drupal and Sitecore integration.
 - ♦ Conducted **code reviews**, mentored junior developers, and provided guidance on best practices.
 - ♦ Collaborated with **UI/UX designers** to translate **Figma designs** into **accessible, pixel-perfect, and responsive UIs**.
-- ♦ Worked closely with **DevOps engineers** to deploy backend infrastructure on **Kubernetes**.
-- ♦ Partnered with **AI engineers** to integrate **OpenAI models (text completion + embeddings)** and built a **RAG system using Elasticsearch**.
+- ♦ Developed **single-page applications (SPAs)** with server-side rendering (SSR) or static site generation (SSG) using frameworks like **Next.js** and **Gatsby**.
+- ♦ Implemented **state management** solutions using **Redux** for complex applications.
             `,
         skills: [
           "Next.js",
+          "TypseScript",
+          "Gatsby",
           "React",
-          "ShadCN UI",
-          "Zustand",
+          "Adobe Experience Manager",
+          "Sitecore",
           "React Query",
-          "Python",
-          "FastAPI",
-          "MongoDB",
-          "Docker",
-          "Redis",
-          "Kubernetes",
-          "S3",
-          "Elasticsearch",
-          "ARQ",
+          "Drupal",
+          "Javascript",
+          "Nunjucks",
+          "Node",
+         "Tailwind CSS",
+          "Figma",
+          "Design Systems",
+          "SCSS",
+          "Shadcn/UI"
         ],
       },
-      {
-        title: "Backend Engineer",
-        year: "01.2024 - 04.2024",
-        description: `
-- ♦ Implemented **backend functionalities**, designed **database models**, and optimized APIs using **FastAPI, Python, and MongoDB**.
-- ♦ Developed and maintained a **background worker system** using **ARQ and Redis**.
-- ♦ Brainstormed and debugged **new features and functionalities** with the engineering team.
-- ♦ Refactored and cleaned code, implementing **better coding patterns** and enforcing **formatting & linting rules** using **Ruff**.
-- ♦ Deployed backend services using **Docker & Docker Compose** and improved **CI/CD pipelines** with **GitHub Actions**.
-            `,
-        skills: [
-          "Python",
-          "FastAPI",
-          "MongoDB",
-          "Docker",
-          "Redis",
-          "ARQ",
-          "GoLang",
-          "Next.js",
-          "React",
-        ],
-      },
+
     ],
   },
 
   {
-    company: "Freelance | Upwork | Locally",
+    company: "IT People",
     positions: [
       {
-        title: "MERN Stack Developer",
-        year: "01.2023 - 01.2024",
+        title: "Frontend Engineer",
+        year: "2021 - 2021",
         description: `
-- ♦ Developed **landing pages and business websites** for local businesses and personal brands.
-- ♦ Built **full-stack MERN applications** for university students, helping them launch **MVPs** for grading projects and startups.
-- ♦ Assisted **university professors** in creating **demo applications** to serve as case studies for students.
+- ♦ Developed solutions for a Banking client including a chatbot and the implementation of the new web site layout with creating reusable components.
+- ♦ Collaborated with backend developers to integrate RESTful APIs and ensure seamless data flow.
+- ♦ Worked with micro services and code refactoring for private client area.
             `,
         skills: [
-          "React",
+          "Bootstrap",
           "Express.js",
-          "MongoDB",
-          "Node.js",
-          "Docker",
-          "Tailwind CSS",
+          "MariaDB",
+          "JavaScript",
+          "React",
+          "PostCSS",
+          "Css Modules",
         ],
       },
     ],
   },
 
   {
-    company: "Fennec Digital",
+    company: "Wrightia",
     positions: [
       {
-        title: "Frontend Developer Intern",
-        year: "01.2023 - 03.2023",
+        title: "Frontend/Web developer",
+        year: "2019 - 2021",
         description: `
-- ♦ Redesigned and developed a **conceptual landing page** for the company using **Next.js, React, and Tailwind CSS**.
-- ♦ Collaborated with **full-stack engineers**, gaining insights into **best practices** in a professional development environment.
-- ♦ Received feedback from **UI/UX and graphic designers** to refine and enhance the visual and user experience of my designs.
+- ♦ Worked with CMS solutions integrated with ERP systems for clients.
+- ♦ Designed and developed other apps such as a **Low Code platform** and a **JIRA software**.
+- ♦ Developed a **design system** and reusable components for internal use.
+- ♦ Designed charts and dashboards for data visualization.
             `,
-        skills: ["Next.js", "React", "Tailwind CSS", "Figma", "Node.js"],
+        skills: ["Wordpress", "Shopify", "Drupal", "Sketch", "Figma", "Jamstack", "React", "Next.js", "Gatsby", "Node.js", "Tailwind CSS", "SCSS", "CSS Modules", "PostCSS", "Design Systems"],
       },
     ],
   },
 
   {
-    company: "Education",
+    company: "Freelance",
     positions: [
       {
-        title: "Web Development & Infographics | University of Boumerdes",
-        year: "09.2022 - 07.2025",
+        title: "GO UP Idea!",
+        year: "2019",
         description: `
-- ♦ Built a strong foundation in **software engineering**, focusing on **web development** and **UI/UX principles**.
-- ♦ Gained hands-on experience with **C/C++ and Linux**, enhancing problem-solving and system-level programming skills.
-- ♦ Developed expertise in **relational databases** and **networking**, applying concepts to real-world applications.
-- ♦ Strengthened **communication and teamwork skills** through group projects, presentations, and technical discussions.
+- ♦ Built CMS solutions for clients using **Wordpress, Shopify, and Drupal**.
+- ♦ Developed custom themes and plugins to enhance functionality and user experience.
+- ♦ Implemented responsive designs and optimized websites for performance and SEO.
+- ♦ Collaborated with clients to understand their requirements and deliver tailored solutions.
             `,
         skills: [
-          "C/C++",
-          "Linux",
-          "UI/UX Foundation",
-          "Marketing",
-          "WordPress",
-          "Networking",
-          "Algorithms",
-          "Relational Databases",
-          "Software Engineering",
-          "Self-learning",
+          "Wordpress",
+          "Shopify",
+          "Drupal",
+          "Templating",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
           "Teamwork",
-          "Presentation",
+          "Presentation", 
+          "SEO",
+          "SEM",
+          "Security",
+          "Performance Optimization",
         ],
+      },
+       {
+        title: "GrowVox",
+        year: "2018",
+        description: `
+- ♦ Built CMS solutions for clients using **Wordpress, Shopify, and Drupal**.
+- ♦ Developed custom themes and plugins to enhance functionality and user experience.
+- ♦ Implemented responsive designs and optimized websites for performance and SEO.
+- ♦ Collaborated with clients to understand their requirements and deliver tailored solutions.
+            `,
+        skills: [
+          "Wordpress",
+          "Shopify",
+          "Drupal",
+          "Templating",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "Teamwork",
+          "Presentation", 
+          "SEO",
+          "SEM",
+          "Security",
+          "Performance Optimization",
+        ],
+      },
+      {
+        title: "TeleTrade",
+        year: "2017",
+        description: `
+- ♦ Built CMS solutions for clients using **Wordpress, Shopify, and Drupal**.
+- ♦ Developed custom themes and plugins to enhance functionality and user experience.
+- ♦ Implemented responsive designs and optimized websites for performance and SEO.
+- ♦ Collaborated with clients to understand their requirements and deliver tailored solutions.
+            `,
+        skills: [
+          "Wordpress",
+          "Shopify",
+          "Drupal",
+          "Templating",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "Teamwork",
+          "Presentation", 
+          "SEO",
+          "SEM",
+          "Security",
+          "Performance Optimization",
+        ],
+      },
+
+      
+
+    ],
+  },
+
+  {
+    company: "Newhotel Software",
+    positions: [
+      {
+        title: "Webdesigner/Graphic Designer",
+        year: "2014 - 2016",
+        description: `
+- ♦ Designed and developed user interfaces for hotel management software.
+- ♦ Created wireframes, prototypes, and high-fidelity designs using tools like Figma and Adobe XD.
+- ♦ Implemented responsive designs into Hotel Clients to ensure optimal user experience across devices.
+- ♦ Created marketing materials, including brochures, banners, and social media graphics.
+            `,
+        skills: ["Figma", "Motion Graphics", "Adobe Illustrator", "HTML", "JavaScript", "CSS", "Adobe Photoshop", "Adobe After Effects", "Web Design", "Graphic Design", "UI/UX Design", "Responsive Design", "Design Systems"],
       },
     ],
   },
+
+
 ];
 

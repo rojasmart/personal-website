@@ -1,7 +1,7 @@
 export const PROFILE_INFO = {
   role: 'Frontend Engineer / Web Developer',
   logo: 'rojasmart',
-  slogan: 'Coding, Creativity, Photography...',
+  slogan: 'Coding, Creativity',
   displayName: "rojasmart",
   email: "rogeriosvaldo@gmail.com",
   about: `

@@ -3,104 +3,120 @@ name: Pixel Runner
 type: side
 image: /og-images/projects/pixel-runner.jpg
 sourceCode: https://github.com/rojasmart/pixel-runner
-preview: https://ai-code-converter-client.vercel.app/
+preview: https://pixel-runner-five.vercel.app/
 technologies:
   - React.js
-  - TailwindCSS
-  - Zustand
+  - Canvas API
   - Node.js
-  - Express.js
-  - MongoDB
-  - ChatGPT API
-description: A MERN stack web app that translates code snippets between programming languages using the ChatGPT API. It features authentication, a user-friendly interface, multi-theme support, and history tracking.
+  - Canvas API
+
+description: Pixel Runner is an action-packed side-scrolling game built with React and TypeScript, featuring fluid animations, parallax backgrounds, and engaging combat mechanics. Play as a brave bunny warrior slashing through flying bat enemies while navigating through a beautifully rendered forest environment.
 ---
 
 # **Pixel Runner**
 
 ![Screenshot of the app](/og-images/projects/pixel-runner.jpg)
 
-## **Overview**  
-AI Code Converter is a web application that enables developers to effortlessly translate code snippets between different programming languages. Built with the **MERN stack** and integrated with the **ChatGPT API**, it provides **accurate and context-aware** code translations in a **user-friendly interface**.  
+## Features
 
-## **Objectives**  
-- Simplify **code translation** between programming languages.  
-- Provide **an intuitive UI** for quick and efficient usage.  
-- Ensure **secure authentication** for user sessions.  
-- Offer **history tracking** for past conversions.  
+### Dynamic Combat System
 
-## **Features**  
-✅ **Language Agnostic** – Convert code between various languages.  
-✅ **Secure Authentication** – Uses JWT-based authentication.  
-✅ **User-Friendly Interface** – Minimal and intuitive UI.  
-✅ **Dark & Light Mode** – Seamless theme switching.  
-✅ **ChatGPT Integration** – AI-powered accurate translations.  
-✅ **History Tracking** – Save and revisit past conversions.  
+- Attack flying bats with your sword using the W key
+- Smooth attack animations with precise hit detection
+- Satisfying death animations for defeated enemies
+- Gain points for each enemy slain
 
-## **Tech Stack**  
-- **Frontend:** React.js, TailwindCSS, Zustand  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
-- **API:** ChatGPT API  
+### Character Movement
 
-## **Installation & Setup**  
+- Run left and right using A/D keys
+- Jump over obstacles with Space
+- Fluid character animations for running, jumping, and attacking
 
-### **Prerequisites**  
-Ensure you have **Node.js** and **npm** installed.  
+### Damage System
 
-### **Steps to Install**  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/Louai-Zokerburg/AI-Code-Converter.git
-   ```  
-2. Navigate to the project folder:  
-   ```bash
-   cd AI-Code-Converter
-   ```  
-3. Install server dependencies:  
-   ```bash
-   npm install
-   ```  
-4. Navigate to the client folder and install dependencies:  
-   ```bash
-   cd client
-   npm install
-   ```  
-5. Create a **`.env`** file in the root directory and add:  
-   ```js
-   MONGO_URI=
-   JWT_SECRET=
-   JWT_LIFETIME=
-   OPENAI_API_KEY=
-   ```  
-6. Start the backend server:  
-   ```bash
-   npm start
-   ```  
-7. Start the client development server:  
-   ```bash
-   cd client
-   npm run dev
-   ```  
-8. Open **`http://localhost:5173`** in your browser.  
+- Take damage when enemies collide with you
+- Visual health bar that changes color based on remaining health
+- Temporary invincibility after taking damage
+- Character flashing effect when invincible
 
-## **Usage**  
-1. **Sign up or log in** to your account.  
-2. **Select the source language** for your code.  
-3. **Paste your code snippet** into the editor.  
-4. **Choose the target language** for translation.  
-5. Click **"Convert"** and view the output.  
-6. **Access your translation history** anytime.  
+### Visual Effects
 
----
+- Parallax scrolling with 5 depth layers for immersive environments
+- Pixel art sprites with fluid animations
+- Death animations for enemies
+- Damage animations for player character
 
-This **AI-powered code converter** simplifies multi-language development, making it an essential tool for programmers! 🚀  
+### Game Mechanics
 
-### **How This Matches Your Structure:**
-✅ **Screenshot** – Included at the top.  
-✅ **Overview** – Short, impactful description of the app.  
-✅ **Objectives** – Clearly listed goals.  
-✅ **Features** – Highlighted key functionalities.  
-✅ **Tech Stack** – Listed technologies used.  
-✅ **Live Demo** – Added a direct link.  
-✅ **Installation** – Step-by-step guide.  
-✅ **Usage** – Clear instructions on how to use the app.  
+- Score tracking with persistent high score system
+- Health management
+- Game over state with restart option
+- Wave-based enemy spawning
+
+## Controls
+
+- **A/D**: Move left/right
+- **Space**: Jump
+- **W**: Attack with sword
+- **Space**: Restart game after game over
+
+## Technical Details
+
+The game is built using modern web technologies:
+
+- **React**: For component-based architecture
+- **TypeScript**: For type-safe development
+- **Canvas API**: For smooth rendering and animations
+- **RequestAnimationFrame**: For consistent animation timing
+- **Local Storage**: For persistent high scores
+
+### Implementation Highlights
+
+- **Collision Detection**: Precise hitbox system for attacks and damage
+- **Animation System**: Frame-based animation for characters and enemies
+- **Parallax Scrolling**: Multi-layered backgrounds with different scroll speeds
+- **Game State Management**: Using React refs for efficient state updates
+- **Wave Movement**: Enemies follow sinusoidal movement patterns for varied difficulty
+
+## Development
+
+### Prerequisites
+
+- Node.js (v16+)
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/pixel-runner.git
+
+# Navigate to the project directory
+cd pixel-runner
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
+
+## Future Enhancements
+
+- Additional enemy types
+- Power-up items
+- Multiple levels with increasing difficulty
+- Boss battles
+- Sound effects and music
+- Mobile touch controls
+- Character progression system
+
+## Credits
+
+- Character sprites: Adventurer asset pack
+- Background art: Parallax Forest
+- Bat enemy sprites: Enemy Pack
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

@@ -1,0 +1,139 @@
+---
+import PageLayout from "@/layouts/page-layout.astro";
+import Box from "@/components/box/index.astro";
+import BoxContent from "@/components/box/content.astro";
+import BoxHeader from "@/components/box/header.astro";
+import BoxTitle from "@/components/box/title.astro";
+import GithubIcon from "@/components/ui/icons/github.astro";
+import {
+  FRONTEND_PROJECTS,
+  FRONTEND_STATS,
+  type FrontendProject,
+} from "@/lib/constants/frontend-projects";
+
+const getDifficultyColor = (difficulty: string) => {
+  switch (difficulty) {
+    case "Newbie":
+      return "bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400";
+    case "Junior":
+      return "bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400";
+    case "Intermediate":
+      return "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-400";
+    case "Advanced":
+      return "bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400";
+    default:
+      return "bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-400";
+  }
+};
+---
+
+<PageLayout
+  title="Frontend Challenges"
+  description="My Frontend Mentor projects – frontend development challenges"
+>
+  <Box className="screen-line-after">
+    <BoxHeader>
+      <a
+        href="https://www.frontendmentor.io/profile/Louai-Zokerburg"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center rounded-md bg-primary px-4 py-2 text-primary-foreground transition-colors hover:bg-primary/90"
+      >
+        See Profile Frontend Mentor
+      </a>
+    </BoxHeader>
+
+    <BoxContent>
+      <div class="mb-8">
+        <div class="mb-4 flex flex-wrap gap-2 text-sm">
+          <span class="rounded-full bg-secondary px-3 py-1">
+            {FRONTEND_STATS.completedProjects} Projetos Completos
+          </span>
+          <span class="rounded-full bg-secondary px-3 py-1">
+            {FRONTEND_STATS.difficulties.junior} Junior
+          </span>
+          <span class="rounded-full bg-secondary px-3 py-1">
+            {FRONTEND_STATS.difficulties.intermediate} Intermediate
+          </span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {
+          FRONTEND_PROJECTS.map(project => (
+            <a
+              href={project.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group block overflow-hidden rounded-lg border border-border bg-card transition-all duration-200 hover:border-primary/20 hover:shadow-lg"
+            >
+              {/* Image Preview */}
+              <div class="relative aspect-video overflow-hidden bg-muted">
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                ) : (
+                  <div class="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary/5 to-primary/10">
+                    <div class="text-6xl opacity-10">🎨</div>
+                  </div>
+                )}
+                <div class="absolute top-2 right-2">
+                  <span
+                    class={`rounded-full px-2 py-1 text-xs ${getDifficultyColor(project.difficulty)} shadow-sm`}
+                  >
+                    {project.difficulty}
+                  </span>
+                </div>
+                {/* Overlay on hover */}
+                <div class="absolute inset-0 bg-black/0 transition-colors duration-200 group-hover:bg-black/10" />
+              </div>
+
+              {/* Content */}
+              <div class="p-6">
+                <h3 class="mb-3 text-lg font-semibold transition-colors group-hover:text-primary">
+                  {project.title}
+                </h3>
+                <p class="mb-4 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
+                  {project.description}
+                </p>
+
+                {/* Tags */}
+                <div class="mb-6 flex flex-wrap gap-2">
+                  {project.tags.map(tag => (
+                    <span class="rounded-full bg-secondary/80 px-3 py-1 text-xs font-medium text-secondary-foreground">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Action Buttons */}
+                <div class="flex gap-2">
+                  <div class="flex-1 rounded-md bg-primary/10 px-3 py-2 text-center text-sm text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                    Ver Demo
+                  </div>
+                  <button
+                    onclick={`event.preventDefault(); event.stopPropagation(); window.open('${project.repoUrl}', '_blank')`}
+                    class="flex items-center justify-center rounded-md border border-border px-3 py-2 transition-colors hover:bg-secondary"
+                    title="Ver código no GitHub"
+                  >
+                    <GithubIcon className="w-4 h-4" />
+                  </button>
+                  <button
+                    onclick={`event.preventDefault(); event.stopPropagation(); window.open('${project.challengeUrl}', '_blank')`}
+                    class="rounded-md border border-border px-3 py-2 text-sm transition-colors hover:bg-secondary"
+                    title="Ver desafio original"
+                  >
+                    Challenge
+                  </button>
+                </div>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+    </BoxContent>
+  </Box>
+</PageLayout>

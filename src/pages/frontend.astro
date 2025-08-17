@@ -21,6 +21,8 @@ const getDifficultyColor = (difficulty: string) => {
       return "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-400";
     case "Advanced":
       return "bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400";
+    case "Guru":
+      return "bg-pink-100 text-red-800 dark:bg-red-900/20 dark:text-red-400";
     default:
       return "bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-400";
   }
@@ -34,7 +36,7 @@ const getDifficultyColor = (difficulty: string) => {
   <Box className="screen-line-after">
     <BoxHeader>
       <a
-        href="https://www.frontendmentor.io/profile/Louai-Zokerburg"
+        href="https://www.frontendmentor.io/profile/rojasmart"
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center rounded-md bg-primary px-4 py-2 text-primary-foreground transition-colors hover:bg-primary/90"
@@ -58,9 +60,9 @@ const getDifficultyColor = (difficulty: string) => {
         </div>
       </div>
 
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-3">
         {
-          FRONTEND_PROJECTS.map(project => (
+          FRONTEND_PROJECTS.slice(0, 9).map(project => (
             <a
               href={project.demoUrl}
               target="_blank"
@@ -112,7 +114,7 @@ const getDifficultyColor = (difficulty: string) => {
                 {/* Action Buttons */}
                 <div class="flex gap-2">
                   <div class="flex-1 rounded-md bg-primary/10 px-3 py-2 text-center text-sm text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                    Ver Demo
+                    Demo
                   </div>
                   <button
                     onclick={`event.preventDefault(); event.stopPropagation(); window.open('${project.repoUrl}', '_blank')`}

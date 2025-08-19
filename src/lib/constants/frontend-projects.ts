@@ -131,6 +131,54 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     repoUrl: "https://github.com/rojasmart/note-taking-app",
     challengeUrl: "https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw",
     completed: true
+  },
+  {
+    id: 11,
+    title: "Todo App",
+    description: "A todo app with search and filter functionality",
+    image: "/og-images/frontend/todo.png",
+    tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
+    difficulty: "Intermediate",
+    demoUrl: "https://todo-app-main-xi-mauve.vercel.app/",
+    repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/todo-app-main",
+    challengeUrl: "https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW",
+    completed: true
+  },
+  {
+    id: 12,
+    title: "Interactive Card Details",
+    description: "An interactive card details component with hover effects",
+    image: "/og-images/frontend/interactive-card.png",
+    tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
+    difficulty: "Junior",
+    demoUrl: "https://interactive-card-details-form-binary.netlify.app/",
+    repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/interactive-card-details-form-main",
+    challengeUrl: "https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw",
+    completed: true
+  },
+  {
+    id: 13,
+    title: "Working Landing Page",
+    description: "A landing page with responsive design and overlay effects",
+    image: "/og-images/frontend/landingpage.png",
+    tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
+    difficulty: "Junior",
+    demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/workit-landing-page/",
+    repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/workit-landing-page",
+    challengeUrl: "https://www.frontendmentor.io/challenges/workit-landing-page-2fYnyle5lu",
+    completed: true
+  },
+  {
+    id: 14,
+    title: "Dine Restaurant Landing Page",
+    description: "A restaurant landing page with responsive design and overlay effects",
+    image: "/og-images/frontend/landingpage-dine.png",
+    tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
+    difficulty: "Intermediate",
+    demoUrl: "https://dine-restaurant-website-kohl.vercel.app/",
+    repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/dine-restaurant-website",
+    challengeUrl: "https://www.frontendmentor.io/challenges/dine-restaurant-website-yAt7Vvxt7",
+    completed: true
   }
 ];
 

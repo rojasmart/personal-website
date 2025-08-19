@@ -4,7 +4,7 @@ export interface FrontendProject {
   description: string;
   image?: string;
   tags: string[];
-  difficulty: "Newbie" | "Junior" | "Intermediate" | "Advanced";
+  difficulty: "Newbie" | "Junior" | "Intermediate" | "Advanced" | "Guru";
   demoUrl: string;
   repoUrl: string;
   challengeUrl: string;
@@ -119,6 +119,18 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     repoUrl: "https://github.com/rojasmart/note-taking-app",
     challengeUrl: "https://www.frontendmentor.io/challenges/note-taking-web-app-773r7bUfOG",
     completed: false
+  },
+  {
+    id: 10,
+    title: "Time Tracking Web App",
+    description: "A time tracking web app with rich text editing and organization features",
+    image: "/og-images/frontend/timetrack.png",
+    tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
+    difficulty: "Junior",
+    demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/time-tracking-dashboard-main/",
+    repoUrl: "https://github.com/rojasmart/note-taking-app",
+    challengeUrl: "https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw",
+    completed: true
   }
 ];
 

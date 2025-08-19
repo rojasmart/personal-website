@@ -5,11 +5,13 @@ export interface FrontendProject {
   image?: string;
   tags: string[];
   difficulty: "Newbie" | "Junior" | "Intermediate" | "Advanced" | "Guru";
+  category?: "Frontend" | "Backend/Frontend" | "Styling" | "JavaScript" | "API Integration" | "Full Stack";
   demoUrl: string;
   repoUrl: string;
   challengeUrl: string;
   completed?: boolean;
 }
+
 
 export const FRONTEND_PROJECTS: FrontendProject[] = [
   {
@@ -19,6 +21,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/hangman.jpg",
     tags: ["React", "Chakra UI", "React Router", "Grid"],
     difficulty: "Advanced",
+    category: "Frontend",
     demoUrl: "https://hangman-game-taupe.vercel.app/",
     repoUrl: "https://github.com/rojasmart/hangman-game",
     challengeUrl: "https://www.frontendmentor.io/challenges/hangman-game-rsQiSVLGWn",
@@ -31,6 +34,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/quizz.png",
     tags: ["React", "Chakra UI", "Redux", "Redux Persist"],
     difficulty: "Junior",
+    category: "Frontend",
     demoUrl: "https://quizz-app-pearl-gamma.vercel.app/",
     repoUrl: "https://github.com/rojasmart/quizz-app",
     challengeUrl: "https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU",
@@ -43,6 +47,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/newsletter.png",
     tags: ["HTML", "CSS", "JavaScript", "Forms", "Validation"],
     difficulty: "Junior",
+    category: "Frontend",
     demoUrl: "https://newsletter-sign-up-with-success-message-main-psi-ten.vercel.app/",
     repoUrl: "https://github.com/rojasmart/newsletter-sign-up-with-success-message-main?tab=readme-ov-file",
     challengeUrl: "https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv",
@@ -55,6 +60,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/interactive-comments.png",
     tags: ["HTML", "CSS", "JavaScript", "API", "Fetch"],
     difficulty: "Intermediate",
+    category: "JavaScript",
     demoUrl: "https://rojasmart.github.io/interactive-comments-section/",
     repoUrl: "https://github.com/rojasmart/interactive-comments-section",
     challengeUrl: "https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9",
@@ -67,6 +73,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/joblisting.png",
     tags: ["HTML", "CSS", "JavaScript", "Date Validation"],
     difficulty: "Intermediate",
+    category: "JavaScript",
     demoUrl: "https://job-listings-with-filtering-gold-phi.vercel.app/",
     repoUrl: "https://github.com/rojasmart/job-listings-with-filtering?tab=readme-ov-file",
     challengeUrl: "https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt",
@@ -79,6 +86,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/dictionary.png",
     tags: ["HTML", "CSS", "JavaScript", "E-commerce", "Lightbox"],
     difficulty: "Intermediate",
+    category: "API Integration",
     demoUrl: "https://dictionary-web-app-ebon.vercel.app/",
     repoUrl: "https://github.com/rojasmart/dictionary-web-app",
     challengeUrl: "https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL",
@@ -91,6 +99,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/entertainment-app.png",
     tags: ["HTML", "CSS", "JavaScript", "Navigation", "Dropdown"],
     difficulty: "Advanced",
+    category: "Full Stack",
     demoUrl: "https://entertainment-web-app-two-gamma.vercel.app/",
     repoUrl: "https://github.com/rojasmart/entertainment-web-app?tab=readme-ov-file",
     challengeUrl: "https://www.frontendmentor.io/challenges/entertainment-web-app-J-UhgAW1X",
@@ -103,6 +112,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/kanban.png",
     tags: ["HTML", "CSS", "JavaScript", "LocalStorage", "Drag & Drop"],
     difficulty: "Guru",
+    category: "Full Stack",
     demoUrl: "https://kanban-task-management-web-app-1-cvto.onrender.com/",
     repoUrl: "https://github.com/rojasmart/kanban-task-management-web-app",
     challengeUrl: "https://www.frontendmentor.io/challenges/kanban-task-management-web-app-wgQLt-HlbB",
@@ -115,6 +125,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/note-taking.png",
     tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
     difficulty: "Advanced",
+    category: "Full Stack",
     demoUrl: "",
     repoUrl: "https://github.com/rojasmart/note-taking-app",
     challengeUrl: "https://www.frontendmentor.io/challenges/note-taking-web-app-773r7bUfOG",
@@ -127,6 +138,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/timetrack.png",
     tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
     difficulty: "Junior",
+    category: "JavaScript",
     demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/time-tracking-dashboard-main/",
     repoUrl: "https://github.com/rojasmart/note-taking-app",
     challengeUrl: "https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw",
@@ -139,6 +151,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/todo.png",
     tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
     difficulty: "Intermediate",
+    category: "JavaScript",
     demoUrl: "https://todo-app-main-xi-mauve.vercel.app/",
     repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/todo-app-main",
     challengeUrl: "https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW",
@@ -151,6 +164,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/interactive-card.png",
     tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
     difficulty: "Junior",
+    category: "Frontend",
     demoUrl: "https://interactive-card-details-form-binary.netlify.app/",
     repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/interactive-card-details-form-main",
     challengeUrl: "https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw",
@@ -163,6 +177,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/landingpage.png",
     tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
     difficulty: "Junior",
+    category: "Styling",
     demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/workit-landing-page/",
     repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/workit-landing-page",
     challengeUrl: "https://www.frontendmentor.io/challenges/workit-landing-page-2fYnyle5lu",
@@ -175,6 +190,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/landingpage-dine.png",
     tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
     difficulty: "Intermediate",
+    category: "Styling",
     demoUrl: "https://dine-restaurant-website-kohl.vercel.app/",
     repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/dine-restaurant-website",
     challengeUrl: "https://www.frontendmentor.io/challenges/dine-restaurant-website-yAt7Vvxt7",
@@ -187,6 +203,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/notifications.png",
     tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
     difficulty: "Junior",
+    category: "Frontend",
     demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/notifications-page/",
     repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/notifications-page",
     challengeUrl: "https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC",
@@ -199,6 +216,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/advice-generator.png",
     tags: ["HTML", "CSS", "JavaScript", "API"],
     difficulty: "Junior",
+    category: "API Integration",
     demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/advice-generator/",
     repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/advice-generator-app",
     challengeUrl: "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
@@ -211,6 +229,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/chart-expenses.png",
     tags: ["HTML", "CSS", "JavaScript", "API"],
     difficulty: "Junior",
+    category: "JavaScript",
     demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/expenses-chart-component/",
     repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/expenses-chart-component",
     challengeUrl: "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
@@ -223,6 +242,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/faq-accordion.png",
     tags: ["HTML", "CSS", "JavaScript", "API"],
     difficulty: "Junior",
+    category: "Frontend",
     demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/faq-accordion-card-main/",
     repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/faq-accordion-card-main",
     challengeUrl: "https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam",
@@ -235,6 +255,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/github-app.png",
     tags: ["HTML", "CSS", "JavaScript", "API"],
     difficulty: "Junior",
+    category: "API Integration",
     demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/github-user-search-app/",
     repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/github-user-search-app",
     challengeUrl: "https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6",
@@ -247,6 +268,7 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     image: "/og-images/frontend/interactive-pricing-component.png",
     tags: ["HTML", "CSS", "JavaScript", "API"],
     difficulty: "Junior",
+    category: "Frontend",
     demoUrl: "https://interactive-pricing-component-khaki.vercel.app/",
     repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/interactive-pricing-component",
     challengeUrl: "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
@@ -262,6 +284,14 @@ export const FRONTEND_STATS = {
     junior: FRONTEND_PROJECTS.filter(p => p.difficulty === "Junior").length,
     intermediate: FRONTEND_PROJECTS.filter(p => p.difficulty === "Intermediate").length,
     advanced: FRONTEND_PROJECTS.filter(p => p.difficulty === "Advanced").length,
-    guru: FRONTEND_PROJECTS.filter(p => p.difficulty === "Guru").length
+    guru: FRONTEND_PROJECTS.filter(p => p.difficulty === "Guru").length,
+  },
+  categories: {
+    frontend: FRONTEND_PROJECTS.filter(p => p.category === "Frontend").length,
+    backendFrontend: FRONTEND_PROJECTS.filter(p => p.category === "Backend/Frontend").length,
+    styling: FRONTEND_PROJECTS.filter(p => p.category === "Styling").length,
+    javascript: FRONTEND_PROJECTS.filter(p => p.category === "JavaScript").length,
+    apiIntegration: FRONTEND_PROJECTS.filter(p => p.category === "API Integration").length,
+    fullStack: FRONTEND_PROJECTS.filter(p => p.category === "Full Stack").length,
   }
 };

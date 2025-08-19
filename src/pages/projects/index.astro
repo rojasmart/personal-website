@@ -18,22 +18,14 @@ const sideProjects = projects.filter(project => project.data.type === "side");
   description="A collection of things I’ve built and experimented."
   title="My Projects"
 >
-  <Pattern />
-  <Box>
-    <BoxHeader>
-      <BoxTitle>Frontend Mentors</BoxTitle>
-    </BoxHeader>
 
-    {frontendMentors.map(item => <ProjectItem project={item} />)}
-  </Box>
+ 
 
   {
     sideProjects.length > 0 && (
       <Pattern />
       <Box>
-        <BoxHeader>
-          <BoxTitle>Side Projects</BoxTitle>
-        </BoxHeader>
+      
         {sideProjects.map(item => <ProjectItem project={item} />)}
       </Box>
     )

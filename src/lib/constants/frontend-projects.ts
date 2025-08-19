@@ -262,5 +262,6 @@ export const FRONTEND_STATS = {
     junior: FRONTEND_PROJECTS.filter(p => p.difficulty === "Junior").length,
     intermediate: FRONTEND_PROJECTS.filter(p => p.difficulty === "Intermediate").length,
     advanced: FRONTEND_PROJECTS.filter(p => p.difficulty === "Advanced").length,
+    guru: FRONTEND_PROJECTS.filter(p => p.difficulty === "Guru").length
   }
 };

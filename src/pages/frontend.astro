@@ -22,7 +22,7 @@ const getDifficultyColor = (difficulty: string) => {
     case "Advanced":
       return "bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-400";
     case "Guru":
-      return "bg-pink-100 text-red-800 dark:bg-red-900/20 dark:text-red-400";
+      return "bg-purple-200 text-red-800 dark:bg-red-900/20 dark:text-red-400";
     default:
       return "bg-gray-100 text-gray-800 dark:bg-gray-900/20 dark:text-gray-400";
   }
@@ -49,13 +49,19 @@ const getDifficultyColor = (difficulty: string) => {
       <div class="mb-8">
         <div class="mb-4 flex flex-wrap gap-2 text-sm">
           <span class="rounded-full bg-secondary px-3 py-1">
-            {FRONTEND_STATS.completedProjects} Projetos Completos
+            {FRONTEND_STATS.completedProjects} Completed Projects
           </span>
           <span class="rounded-full bg-secondary px-3 py-1">
             {FRONTEND_STATS.difficulties.junior} Junior
           </span>
           <span class="rounded-full bg-secondary px-3 py-1">
             {FRONTEND_STATS.difficulties.intermediate} Intermediate
+          </span>
+          <span class="rounded-full bg-secondary px-3 py-1">
+            {FRONTEND_STATS.difficulties.advanced} Advanced
+          </span>
+          <span class="rounded-full bg-secondary px-3 py-1">
+            {FRONTEND_STATS.difficulties.guru} Guru
           </span>
         </div>
       </div>

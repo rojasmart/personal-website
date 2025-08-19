@@ -179,6 +179,30 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/dine-restaurant-website",
     challengeUrl: "https://www.frontendmentor.io/challenges/dine-restaurant-website-yAt7Vvxt7",
     completed: true
+  },
+  {
+    id: 15,
+    title: "Notifications Page",
+    description: "A notifications page with real-time updates and filtering options",
+    image: "/og-images/frontend/notifications.png",
+    tags: ["HTML", "CSS", "JavaScript", "API", "Search", "Filter"],
+    difficulty: "Junior",
+    demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/notifications-page/",
+    repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/notifications-page",
+    challengeUrl: "https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC",
+    completed: true
+  },
+  {
+    id: 16,
+    title: "Advice Generator App",
+    description: "A advice generator app that generates random advice",
+    image: "/og-images/frontend/advice-generator.png",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+    difficulty: "Junior",
+    demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/advice-generator/",
+    repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/advice-generator-app",
+    challengeUrl: "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
+    completed: true
   }
 ];
 

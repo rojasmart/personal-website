@@ -203,6 +203,54 @@ export const FRONTEND_PROJECTS: FrontendProject[] = [
     repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/advice-generator-app",
     challengeUrl: "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
     completed: true
+  },
+  {
+    id: 17,
+    title: "Expenses Chart Component",
+    description: "A expenses chart component that displays weekly expenses",
+    image: "/og-images/frontend/chart-expenses.png",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+    difficulty: "Junior",
+    demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/expenses-chart-component/",
+    repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/expenses-chart-component",
+    challengeUrl: "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
+    completed: true
+  },
+  {
+    id: 18,
+    title: "FAQ Accordion Card",
+    description: "A FAQ accordion card that displays frequently asked questions",
+    image: "/og-images/frontend/faq-accordion.png",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+    difficulty: "Junior",
+    demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/faq-accordion-card-main/",
+    repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/faq-accordion-card-main",
+    challengeUrl: "https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam",
+    completed: true
+  },
+   {
+    id: 19,
+    title: "GitHub User Search App",
+    description: "A GitHub user search app that allows users to search for GitHub users",
+    image: "/og-images/frontend/github-app.png",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+    difficulty: "Junior",
+    demoUrl: "https://rojasmart.github.io/frontend-mentor-projects/github-user-search-app/",
+    repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/github-user-search-app",
+    challengeUrl: "https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6",
+    completed: true
+  },
+  {
+    id: 20,
+    title: "Interactive Pricing Component",
+    description: "An interactive pricing component that allows users to select different pricing plans",
+    image: "/og-images/frontend/interactive-pricing-component.png",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+    difficulty: "Junior",
+    demoUrl: "https://interactive-pricing-component-khaki.vercel.app/",
+    repoUrl: "https://github.com/rojasmart/frontend-mentor-projects/tree/main/interactive-pricing-component",
+    challengeUrl: "https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8",
+    completed: true
   }
 ];
 
